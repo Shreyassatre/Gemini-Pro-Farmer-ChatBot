@@ -14,7 +14,7 @@ const Chatbot = () => {
     setIsLoading(true);
     setMessages([...messages, { type: 'user', text: input }]);
 
-    const genAI = new GoogleGenerativeAI('AIzaSyAoP_AbLt2CRJNNXftHaZT5wvl0WN_hYls');
+    const genAI = new GoogleGenerativeAI('gemini-pro-api-key');
 
     const prompt=`
     You have been developed to help farmers to helps farmers by solving their doubts related to farming.
